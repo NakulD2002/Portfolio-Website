@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Projects - Nakul D Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+   /* Optional: Light background for visibility */
+   margin-right: 1000px;
+    padding: 15px 20px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .links {
+    display: flex;
+    gap: 20px; /* Adds space between navigation buttons */
+}
+
+nav a {
+    color: black; /* Set font color to black */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px; /* Optional: Add padding for better clickability */
+}
+
+nav a:hover {
+    color: #f39c12; /* Optional: Hover effect */
+}
+
+
+        .hi
+        {
+            color: #f39c12;
+        }
+        
+
+        .projects-container {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .projects-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .projects-title h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .projects-title p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .project-card h3 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .project-card p {
+            font-size: 16px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .project-card a {
+            background-color: #f39c12;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-card a:hover {
+            background-color: #e67e22;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <h3 class="hi">Nakul D</h3>
+            </div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">Intro</a>
+                <a href="skills.html">Skills</a>
+                <a href="education.html">Education</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact Me</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">Intro</a>
+                <a href="skills.html">Skills</a>
+                <a href="#">Education</a>
+                <a href="projects.html">Projects</a>
+                <a href="#">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Projects Section -->
+    <div class="projects-container">
+        <div class="projects-title" data-aos="fade-down" data-aos-duration="1000">
+            <h1>My Projects</h1>
+            <p>Here are some of the projects I've worked on:</p>
+        </div>
+
+        <div class="grid-container">
+            <!-- Project 1 -->
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <img src="smart.jpg" alt="Smart Attendance using Face Recognition">
+                <h3>Smart Attendance System</h3>
+                <p>A face recognition-based system to automate attendance marking, leveraging OpenCV and Python.</p>
+                <a href="https://github.com/NakulD2002/Smart-Attendance-Using-face-recognition/tree/main">View Project</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <img src="quiz.png" alt="Quiz App">
+                <h3>Android Quiz App</h3>
+                <p>A feature-rich Android application built using Java, offering interactive quizzes and scoring systems.</p>
+                <a href="#">View Project</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <img src="shop.jpg" alt="E-commerce Website">
+                <h3>E-commerce Website</h3>
+                <p>A responsive e-commerce website created using HTML, CSS, JavaScript, and backend integration with PHP.</p>
+                <a href="#">View Project</a>
+            </div>
+
+            <!-- Add more projects as needed -->
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

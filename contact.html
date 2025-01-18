@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Contact - Nakul D</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        /* Contact page specific styles */
+        .contact-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-container h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #f39c12;
+            margin-bottom: 20px;
+        }
+
+        .contact-details {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .contact-details span {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .contact-details i {
+            color: #f39c12;
+            margin-right: 10px;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <h3 style="font-size: 24px; font-weight: bold;">Nakul D</h3>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">Intro</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="education.html">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="projects.html">Projects</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Me</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">Intro</a>
+                <a href="skills.html">Skills</a>
+                <a href="education.html">Education</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    
+
+    <section>
+        <div class="contact-container" data-aos="zoom-in" data-aos-duration="1000">
+            <h1>Contact Me</h1>
+            <div class="contact-details">
+                <p><i class="fa-solid fa-user"></i> <span>Name:</span> Nakul D</p>
+                <p><i class="fa-solid fa-phone"></i> <span>Phone:</span> 7204383189</p>
+                <p><i class="fa-solid fa-map-marker-alt"></i> <span>Address:</span> Laksmamma Badavane, Near Valmiki Bhavana, Yagnavalkya Public School,<br> HIRIYUR, Karnataka - 577598</p>
+            </div>
+            <div class="social-links" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <a href="https://github.com/NakulD2002"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/nishant.achar/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://linkedin.com/in/nakul-achar"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/1rn20is090"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.display = "block";
+        }
+
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.display = "none";
+        }
+    </script>
+</body>
+</html>

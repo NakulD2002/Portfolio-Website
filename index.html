@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Nakul D Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        /* Profile image styles */
+        .profile-img {
+            width: 400px;
+            height: 400px;
+            border-radius: 40%; /* Rounded image */
+            object-fit: cover;
+            border: 5px solid #f39c12; /* Border for aesthetics */
+            margin-right: 50px; /* Space between image and text */
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .content {
+            max-width: 600px;
+            margin-left: 120px; /* Adjust this value as needed */
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        h1 span {
+            white-space: nowrap; /* Ensure "Hi I'm" and "Nakul D" stay on the same line */
+        }
+
+        .typewriter {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #f39c12;
+        }
+
+        .btn a button {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .btn a button:hover {
+            background-color: #d8870c;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background-color: white;
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        .dropdown .links a {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .dropdown .links a:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <h3 style="font-size: 24px; font-weight: bold;">Nakul D</h3>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">Intro</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="education.html">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="projects.html">Projects</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Me</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="about.html">Intro</a>
+                <a href="skills.html">Skills</a>
+                <a href="education.html">Education</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+            <!-- Profile image section -->
+            <div class="profile-section">
+                <img src="superset profile.jpg" alt="Nakul's Photo" class="profile-img" data-aos="zoom-in-right" data-aos-duration="2500">
+            </div>
+            
+            <!-- Content section (name, text, buttons, etc.) -->
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hi I'm <span>Nakul D</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    I am a highly motivated individual with a strong technical background in Information Science and Technology, complemented by hands-on experience in software development. I'm also eager to apply my passion for business development, combining technical expertise with strategic thinking.
+                </p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/NakulD2002"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/nishant.achar/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://linkedin.com/in/nakul-achar"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/1rn20is090"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <a href="NakulD_Resume.pdf" download="NakulD_Resume.pdf">
+                        <button>Download CV</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.display = "block";
+        }
+
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.display = "none";
+        }
+    </script>
+</body>
+</html>
